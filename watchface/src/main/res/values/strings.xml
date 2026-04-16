@@ -1,0 +1,31 @@
+<resources>
+    <string name="watch_face_name">ApexLegends-Face</string>
+    <string name="greeting">Hello, world!</string>
+    <string name="app_name">Chibi Apex</string>
+    <string name="menu_title">Select Legend</string>
+
+    <string name="legend_alter">Alter</string>
+    <string name="legend_ash">Ash</string>
+    <string name="legend_ballistic">Ballistic</string>
+    <string name="legend_bangalore">Bangalore</string>
+    <string name="legend_bloodhound">Bloodhound</string>
+    <string name="legend_valkyrie">Valkyrie</string>
+    <string name="legend_catalyst">Catalyst</string>
+    <string name="legend_lifeline">Lifeline</string>
+    <string name="legend_rampart">Rampart</string>
+    <string name="legend_wattson">Wattson</string>
+
+    <string name="flavor_valk">Default Valkyrie</string>
+    <string name="flavor_alter">Alter Style</string>
+
+    <string name="color_theme">Hand Color</string>
+    <string name="color_default">Default (Pink &amp; Orange)</string>
+    <string name="color_neon">Neon (Blue &amp; Green)</string>
+    <string name="color_mono">Mono (White &amp; Gray)</string>
+    <string name="color_crimson">Crimson (Red &amp; Gold)</string>
+    <string name="color_toxic">Toxic (Purple &amp; Green)</string>
+    <string name="color_cyber">Cyber (Cyan &amp; Magenta)</string>
+
+    <string name="config_show_battery">Show Battery</string>
+    <string name="config_smooth_seconds">Smooth Seconds</string>
+</resources>
