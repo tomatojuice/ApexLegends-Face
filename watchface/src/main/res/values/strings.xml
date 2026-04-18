@@ -15,6 +15,22 @@
     <string name="legend_rampart">Rampart</string>
     <string name="legend_wattson">Wattson</string>
 
+    <string name="legend_caustic">Caustic</string>
+    <string name="legend_conduit">Conduit</string>
+    <string name="legend_crypto">Crypto</string>
+    <string name="legend_fuse">Fuse</string>
+    <string name="legend_gibraltar">Gibraltar</string>
+    <string name="legend_horizon">Horizon</string>
+
+    <string name="legend_loba">Loba</string>
+    <string name="legend_mad_maggie">Mad Maggie</string>
+    <string name="legend_mirage">Mirage</string>
+    <string name="legend_newcastle">Newcastle</string>
+    <string name="legend_octane">Octane</string>
+    <string name="legend_revenant">Revenant</string>
+    <string name="legend_seer">Seer</string>
+    <string name="legend_sparrow">Sparrow</string>
+
     <string name="flavor_valk">Default Valkyrie</string>
     <string name="flavor_alter">Alter Style</string>
 

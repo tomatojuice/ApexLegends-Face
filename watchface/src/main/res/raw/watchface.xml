@@ -18,6 +18,22 @@
             <ListOption id="7" displayName="@string/legend_lifeline" screenReaderText="@string/legend_lifeline" icon="@drawable/i_lifeline_2" />
             <ListOption id="8" displayName="@string/legend_rampart" screenReaderText="@string/legend_rampart" icon="@drawable/i_rampart_1" />
             <ListOption id="9" displayName="@string/legend_wattson" screenReaderText="@string/legend_wattson" icon="@drawable/i_wattson_1" />
+
+            <ListOption id="10" displayName="@string/legend_caustic" screenReaderText="@string/legend_caustic" icon="@drawable/i_caustic_1" />
+            <ListOption id="11" displayName="@string/legend_conduit" screenReaderText="@string/legend_conduit" icon="@drawable/i_conduit_1" />
+            <ListOption id="12" displayName="@string/legend_crypto" screenReaderText="@string/legend_crypto" icon="@drawable/i_crypto_1" />
+            <ListOption id="13" displayName="@string/legend_fuse" screenReaderText="@string/legend_fuse" icon="@drawable/i_fuse_1" />
+            <ListOption id="14" displayName="@string/legend_gibraltar" screenReaderText="@string/legend_gibraltar" icon="@drawable/i_gibraltar_1" />
+            <ListOption id="15" displayName="@string/legend_horizon" screenReaderText="@string/legend_horizon" icon="@drawable/i_horizon_2" />
+
+            <ListOption id="16" displayName="@string/legend_loba" screenReaderText="@string/legend_loba" icon="@drawable/i_loba_1" />
+            <ListOption id="17" displayName="@string/legend_mad_maggie" screenReaderText="@string/legend_mad_maggie" icon="@drawable/i_mad_maggie_1" />
+            <ListOption id="18" displayName="@string/legend_mirage" screenReaderText="@string/legend_mirage" icon="@drawable/i_mirage_1" />
+            <ListOption id="19" displayName="@string/legend_newcastle" screenReaderText="@string/legend_newcastle" icon="@drawable/i_newcastle_1" />
+            <ListOption id="20" displayName="@string/legend_octane" screenReaderText="@string/legend_octane" icon="@drawable/i_okutan_2" />
+            <ListOption id="21" displayName="@string/legend_revenant" screenReaderText="@string/legend_revenant" icon="@drawable/i_revenant_1" />
+            <ListOption id="22" displayName="@string/legend_seer" screenReaderText="@string/legend_seer" icon="@drawable/i_seer_1" />
+            <ListOption id="23" displayName="@string/legend_sparrow" screenReaderText="@string/legend_sparrow" icon="@drawable/i_sparrow_1" />
         </ListConfiguration>
 
         <ColorConfiguration
@@ -47,17 +63,38 @@
 
     <Scene backgroundColor="#000000">
 
+        <PartImage x="0" y="0" width="450" height="450" name="base_bg">
+            <Image resource="image_pastel_green" />
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+        </PartImage>
+
         <ListConfiguration id="background_image">
             <ListOption id="0"><PartImage x="0" y="0" width="450" height="450" name="p0"><Image resource="c_alter" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-            <ListOption id="1"><PartImage x="0" y="0" width="450" height="450" name="p1"><Image resource="c_ash" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-            <ListOption id="2"><PartImage x="0" y="0" width="450" height="450" name="p2"><Image resource="c_ballistic_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-            <ListOption id="3"><PartImage x="0" y="0" width="450" height="450" name="p3"><Image resource="c_bangalore_2" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-            <ListOption id="4"><PartImage x="0" y="0" width="450" height="450" name="p4"><Image resource="c_blood_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-            <ListOption id="5"><PartImage x="0" y="0" width="450" height="450" name="p5"><Image resource="c_val" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-            <ListOption id="6"><PartImage x="0" y="0" width="450" height="450" name="p6"><Image resource="c_catalyst_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-            <ListOption id="7"><PartImage x="0" y="0" width="450" height="450" name="p7"><Image resource="c_lifeline_2" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-            <ListOption id="8"><PartImage x="0" y="0" width="450" height="450" name="p8"><Image resource="c_rampart_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-            <ListOption id="9"><PartImage x="0" y="0" width="450" height="450" name="p9"><Image resource="c_wattson_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+            <ListOption id="1"><PartImage x="0" y="0" width="450" height="450" name="p1_bg"><Image resource="c_ash" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+            <ListOption id="2"><PartImage x="0" y="0" width="450" height="450" name="p2_bg"><Image resource="c_ballistic_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+            <ListOption id="3"><PartImage x="0" y="0" width="450" height="450" name="p3_bg"><Image resource="c_bangalore_2" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+            <ListOption id="4"><PartImage x="0" y="0" width="450" height="450" name="p4_bg"><Image resource="c_blood_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+            <ListOption id="5"><PartImage x="0" y="0" width="450" height="450" name="p5_bg"><Image resource="c_val" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+            <ListOption id="6"><PartImage x="0" y="0" width="450" height="450" name="p6_bg"><Image resource="c_catalyst_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+            <ListOption id="7"><PartImage x="0" y="0" width="450" height="450" name="p7_bg"><Image resource="c_lifeline_2" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+            <ListOption id="8"><PartImage x="0" y="0" width="450" height="450" name="p8_bg"><Image resource="c_rampart_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+            <ListOption id="9"><PartImage x="0" y="0" width="450" height="450" name="p9_bg"><Image resource="c_wattson_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+
+            <ListOption id="10"><PartImage x="0" y="0" width="450" height="450" name="bg_10"><Image resource="c_caustic_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+            <ListOption id="11"><PartImage x="0" y="0" width="450" height="450" name="bg_11"><Image resource="c_conduit_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+            <ListOption id="12"><PartImage x="0" y="0" width="450" height="450" name="bg_12"><Image resource="c_crypto_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+            <ListOption id="13"><PartImage x="0" y="0" width="450" height="450" name="bg_13"><Image resource="c_fuse_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+            <ListOption id="14"><PartImage x="0" y="0" width="450" height="450" name="bg_14"><Image resource="c_gibraltar_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+            <ListOption id="15"><PartImage x="0" y="0" width="450" height="450" name="bg_15"><Image resource="c_horizon_2" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+
+            <ListOption id="16"><PartImage x="0" y="0" width="450" height="450" name="bg_16"><Image resource="c_loba_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+            <ListOption id="17"><PartImage x="0" y="0" width="450" height="450" name="bg_17"><Image resource="c_mad_maggie_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+            <ListOption id="18"><PartImage x="0" y="0" width="450" height="450" name="bg_18"><Image resource="c_mirage_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+            <ListOption id="19"><PartImage x="0" y="0" width="450" height="450" name="bg_19"><Image resource="c_newcastle_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+            <ListOption id="20"><PartImage x="0" y="0" width="450" height="450" name="bg_20"><Image resource="c_okutan_2" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+            <ListOption id="21"><PartImage x="0" y="0" width="450" height="450" name="bg_21"><Image resource="c_revenant_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+            <ListOption id="22"><PartImage x="0" y="0" width="450" height="450" name="bg_22"><Image resource="c_seer_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+            <ListOption id="23"><PartImage x="0" y="0" width="450" height="450" name="bg_23"><Image resource="c_sparrow_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
         </ListConfiguration>
 
         <Group x="0" y="0" width="450" height="450" name="indices">

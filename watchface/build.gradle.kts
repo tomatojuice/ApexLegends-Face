@@ -4,14 +4,14 @@ plugins {
 
 android {
     namespace = "jp.ne.sakura.tomatojuice.apexface"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "jp.ne.sakura.tomatojuice.apexface"
         minSdk = 34
         targetSdk = 34
-        versionCode = 11000001
-        versionName = "3.0.1"
+        versionCode = 11000003
+        versionName = "3.1.1"
     }
 
     // 🌟 徹底掃除 1: 警告が出ていた部分を最新の書き方(directories.clear)に修正
