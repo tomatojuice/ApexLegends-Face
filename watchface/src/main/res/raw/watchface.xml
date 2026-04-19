@@ -34,6 +34,8 @@
             <ListOption id="21" displayName="@string/legend_revenant" screenReaderText="@string/legend_revenant" icon="@drawable/i_revenant_1" />
             <ListOption id="22" displayName="@string/legend_seer" screenReaderText="@string/legend_seer" icon="@drawable/i_seer_1" />
             <ListOption id="23" displayName="@string/legend_sparrow" screenReaderText="@string/legend_sparrow" icon="@drawable/i_sparrow_1" />
+
+            <ListOption id="24" displayName="@string/legend_wraith" screenReaderText="@string/legend_wraith" icon="@drawable/i_wraith_1" />
         </ListConfiguration>
 
         <ColorConfiguration
@@ -95,6 +97,8 @@
             <ListOption id="21"><PartImage x="0" y="0" width="450" height="450" name="bg_21"><Image resource="c_revenant_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
             <ListOption id="22"><PartImage x="0" y="0" width="450" height="450" name="bg_22"><Image resource="c_seer_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
             <ListOption id="23"><PartImage x="0" y="0" width="450" height="450" name="bg_23"><Image resource="c_sparrow_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+
+            <ListOption id="24"><PartImage x="0" y="0" width="450" height="450" name="bg_24"><Image resource="c_wraith_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
         </ListConfiguration>
 
         <Group x="0" y="0" width="450" height="450" name="indices">

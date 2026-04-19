@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="watch_face_name">ApexLegends-Face</string>
     <string name="greeting">Hello, world!</string>
@@ -30,6 +31,8 @@
     <string name="legend_revenant">Revenant</string>
     <string name="legend_seer">Seer</string>
     <string name="legend_sparrow">Sparrow</string>
+
+    <string name="legend_wraith">Wraith</string>
 
     <string name="flavor_valk">Default Valkyrie</string>
     <string name="flavor_alter">Alter Style</string>
