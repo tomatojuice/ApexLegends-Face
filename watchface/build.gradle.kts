@@ -10,8 +10,8 @@ android {
         applicationId = "jp.ne.sakura.tomatojuice.apexface"
         minSdk = 34
         targetSdk = 34
-        versionCode = 11000006
-        versionName = "3.1.4"
+        versionCode = 11000007
+        versionName = "3.1.5"
     }
 
     // 🌟 徹底掃除 1: 警告が出ていた部分を最新の書き方(directories.clear)に修正
