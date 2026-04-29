@@ -34,6 +34,8 @@
 
     <string name="legend_wraith">Wraith</string>
     <string name="legend_pathfinder">Pathfinder</string>
+    <!-- 🌟 追加：ヴァンテージ -->
+    <string name="legend_vantage">Vantage</string>
 
     <string name="flavor_valk">Default Valkyrie</string>
     <string name="flavor_alter">Alter Style</string>
