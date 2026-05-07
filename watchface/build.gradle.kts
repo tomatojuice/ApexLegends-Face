@@ -10,11 +10,11 @@ android {
         applicationId = "jp.ne.sakura.tomatojuice.apexface"
         minSdk = 34
         targetSdk = 34
-        versionCode = 11000008
-        versionName = "3.1.6"
+        versionCode = 11000009
+        versionName = "3.1.7"
     }
 
-    // 🌟 徹底掃除 1: 警告が出ていた部分を最新の書き方(directories.clear)に修正
+    // 🌟 警告が出ていた部分を最新の書き方(directories.clear)に修正
     sourceSets {
         getByName("main") {
             java.directories.clear()
@@ -33,14 +33,14 @@ android {
         }
     }
 
-    // 🌟 徹底掃除 2: 警告の出た renderScript を削除してクリーンに
+    // 🌟 警告の出た renderScript を削除してクリーンに
     buildFeatures {
         buildConfig = false
         aidl = false
         resValues = false
     }
 
-    // 🌟 徹底掃除 3: 強制的にDEXとKotlin系を排除
+    // 🌟 強制的にDEXとKotlin系を排除
     packaging {
         resources {
             excludes += "classes.dex"
@@ -54,6 +54,6 @@ android {
     enableKotlin = false
 }
 
-// 🌟 徹底掃除 4: ここは空のままでいいけど、念のためプロジェクトの libs フォルダを空にして！
+// 🌟 ここは空のままでいいけど、念のためプロジェクトの libs フォルダを空にする
 dependencies {
 }

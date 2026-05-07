@@ -36,8 +36,8 @@
             <ListOption id="23" displayName="@string/legend_sparrow" screenReaderText="@string/legend_sparrow" icon="@drawable/i_sparrow_1" />
             <ListOption id="24" displayName="@string/legend_wraith" screenReaderText="@string/legend_wraith" icon="@drawable/i_wraith_1" />
             <ListOption id="25" displayName="@string/legend_pathfinder" screenReaderText="@string/legend_pathfinder" icon="@drawable/i_pass_1" />
-            <!-- 🌟 追加：ヴァンテージ (メニュー項目) -->
             <ListOption id="26" displayName="@string/legend_vantage" screenReaderText="@string/legend_vantage" icon="@drawable/i_vantage_1" />
+            <ListOption id="27" displayName="@string/legend_axle" screenReaderText="@string/legend_axle" icon="@drawable/i_axle_2" />
         </ListConfiguration>
 
         <ColorConfiguration
@@ -104,9 +104,9 @@
             <ListOption id="23"><PartImage x="0" y="0" width="450" height="450" name="bg_23"><Image resource="c_sparrow_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
             <ListOption id="24"><PartImage x="0" y="0" width="450" height="450" name="bg_24"><Image resource="c_wraith_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
             <ListOption id="25"><PartImage x="0" y="0" width="450" height="450" name="bg_25"><Image resource="c_pass_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-
-            <!-- 🌟 追加：ヴァンテージ (背景画像) -->
             <ListOption id="26"><PartImage x="0" y="0" width="450" height="450" name="bg_26"><Image resource="c_vantage_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+
+            <ListOption id="27"><PartImage x="0" y="0" width="450" height="450" name="bg_27"><Image resource="c_axle_2" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
         </ListConfiguration>
 
         <Group x="0" y="0" width="450" height="450" name="indices">
@@ -151,30 +151,70 @@
 
             <BooleanOption id="TRUE">
                 <AnalogClock x="0" y="0" width="450" height="450">
+
+                    <HourHand resource="hour_modern_shadow" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5">
+                        <Variant mode="AMBIENT" target="alpha" value="0" />
+                    </HourHand>
                     <HourHand resource="hour_modern" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.0]">
                         <Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" />
                     </HourHand>
+
+                    <MinuteHand resource="min_modern_shadow" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5">
+                        <Variant mode="AMBIENT" target="alpha" value="0" />
+                    </MinuteHand>
                     <MinuteHand resource="min_modern" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.1]">
                         <Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" />
                     </MinuteHand>
+                    <MinuteHand resource="min_modern_highlight" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5">
+                        <Variant mode="AMBIENT" target="alpha" value="0" />
+                    </MinuteHand>
+
+                    <SecondHand resource="sec_modern_shadow" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5">
+                        <Variant mode="AMBIENT" target="alpha" value="0" />
+                        <Sweep frequency="15" />
+                    </SecondHand>
                     <SecondHand resource="sec_modern" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.2]">
                         <Variant mode="AMBIENT" target="alpha" value="0" />
                         <Sweep frequency="15" />
                     </SecondHand>
+                    <SecondHand resource="sec_modern_highlight" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5">
+                        <Variant mode="AMBIENT" target="alpha" value="0" />
+                        <Sweep frequency="15" />
+                    </SecondHand>
+
                 </AnalogClock>
             </BooleanOption>
 
             <BooleanOption id="FALSE">
                 <AnalogClock x="0" y="0" width="450" height="450">
+
+                    <HourHand resource="hour_modern_shadow" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5">
+                        <Variant mode="AMBIENT" target="alpha" value="0" />
+                    </HourHand>
                     <HourHand resource="hour_modern" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.0]">
                         <Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" />
                     </HourHand>
+
+                    <MinuteHand resource="min_modern_shadow" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5">
+                        <Variant mode="AMBIENT" target="alpha" value="0" />
+                    </MinuteHand>
                     <MinuteHand resource="min_modern" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.1]">
                         <Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" />
                     </MinuteHand>
+                    <MinuteHand resource="min_modern_highlight" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5">
+                        <Variant mode="AMBIENT" target="alpha" value="0" />
+                    </MinuteHand>
+
+                    <SecondHand resource="sec_modern_shadow" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5">
+                        <Variant mode="AMBIENT" target="alpha" value="0" />
+                    </SecondHand>
                     <SecondHand resource="sec_modern" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.2]">
                         <Variant mode="AMBIENT" target="alpha" value="0" />
                     </SecondHand>
+                    <SecondHand resource="sec_modern_highlight" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5">
+                        <Variant mode="AMBIENT" target="alpha" value="0" />
+                    </SecondHand>
+
                 </AnalogClock>
             </BooleanOption>
 
