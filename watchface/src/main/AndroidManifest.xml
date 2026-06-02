@@ -4,7 +4,7 @@
     <application
         android:hasCode="false"
         android:icon="@mipmap/ic_launcher"
-        android:label="Chibi Apex">
+        android:label="@string/app_name">
         <meta-data
             android:name="com.google.android.wearable.standalone"
             android:value="true" />

@@ -2,7 +2,7 @@
 <resources>
     <string name="watch_face_name">ApexLegends-Face</string>
     <string name="greeting">Hello, world!</string>
-    <string name="app_name">Chibi Apex</string>
+    <string name="app_name">Chibi Legends</string>
     <string name="menu_title">Select Legend</string>
 
     <string name="legend_alter">Alter</string>
