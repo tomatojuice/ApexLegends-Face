@@ -11,11 +11,11 @@
         <property
             android:name="com.google.wear.watchface.format.version"
             android:value="2" />
-        <meta-data
-            android:name="android.service.watchface.definition"
+        <property
+            android:name="com.google.wear.watchface.format.watchface"
             android:resource="@raw/watchface" />
-        <meta-data
-            android:name="com.google.wear.watchface.editor.info"
+        <property
+            android:name="com.google.wear.watchface.format.watch_face_info"
             android:resource="@xml/watch_face_info" />
     </application>
 </manifest>

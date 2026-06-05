@@ -1,21 +1,20 @@
 plugins {
-    alias(libs.plugins.android.application)
+    id("com.android.application")
 }
-
 android {
     namespace = "jp.ne.sakura.tomatojuice.apexface"
+
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
         }
     }
-
     defaultConfig {
         applicationId = "jp.ne.sakura.tomatojuice.apexface"
         minSdk = 34
         targetSdk = 36
-        versionCode = 11000010
-        versionName = "3.1.8"
+        versionCode = 11000011
+        versionName = "3.2.0"
     }
 
     sourceSets {
@@ -51,7 +50,6 @@ android {
             excludes += "META-INF/com.android.tools/**"
         }
     }
-
     enableKotlin = false
 }
 

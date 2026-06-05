@@ -40,7 +40,7 @@
     <string name="flavor_valk">Default Valkyrie</string>
     <string name="flavor_alter">Alter Style</string>
 
-    <string name="color_theme">Hand Color</string>
+    <string name="color_theme">Hand Theme</string>
     <string name="color_default">Default (Pink &amp; Orange)</string>
     <string name="color_neon">Neon (Blue &amp; Green)</string>
     <string name="color_mono">Mono (White &amp; Gray)</string>

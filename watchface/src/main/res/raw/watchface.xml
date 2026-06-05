@@ -18,14 +18,12 @@
             <ListOption id="7" displayName="@string/legend_lifeline" screenReaderText="@string/legend_lifeline" icon="i_lifeline_2" />
             <ListOption id="8" displayName="@string/legend_rampart" screenReaderText="@string/legend_rampart" icon="i_rampart_1" />
             <ListOption id="9" displayName="@string/legend_wattson" screenReaderText="@string/legend_wattson" icon="i_wattson_1" />
-
             <ListOption id="10" displayName="@string/legend_caustic" screenReaderText="@string/legend_caustic" icon="i_caustic_1" />
             <ListOption id="11" displayName="@string/legend_conduit" screenReaderText="@string/legend_conduit" icon="i_conduit_1" />
             <ListOption id="12" displayName="@string/legend_crypto" screenReaderText="@string/legend_crypto" icon="i_crypto_1" />
             <ListOption id="13" displayName="@string/legend_fuse" screenReaderText="@string/legend_fuse" icon="i_fuse_1" />
             <ListOption id="14" displayName="@string/legend_gibraltar" screenReaderText="@string/legend_gibraltar" icon="i_gibraltar_1" />
             <ListOption id="15" displayName="@string/legend_horizon" screenReaderText="@string/legend_horizon" icon="i_horizon_2" />
-
             <ListOption id="16" displayName="@string/legend_loba" screenReaderText="@string/legend_loba" icon="i_loba_1" />
             <ListOption id="17" displayName="@string/legend_mad_maggie" screenReaderText="@string/legend_mad_maggie" icon="i_mad_maggie_1" />
             <ListOption id="18" displayName="@string/legend_mirage" screenReaderText="@string/legend_mirage" icon="i_mirage_1" />
@@ -44,7 +42,7 @@
             id="hand_theme"
             displayName="@string/color_theme"
             screenReaderText="@string/color_theme"
-            icon="i_val" defaultValue="default_colors">
+            defaultValue="default_colors">
             <ColorOption id="default_colors" displayName="@string/color_default" colors="#FFFF0080 #FFFF9900 #FFFFE600" />
             <ColorOption id="neon_colors" displayName="@string/color_neon" colors="#FF00B2FF #FF00FF33 #FF80FF00" />
             <ColorOption id="mono_colors" displayName="@string/color_mono" colors="#FFFFFFFF #FFCCCCCC #FF888888" />
@@ -58,57 +56,47 @@
 
         <BooleanConfiguration id="show_batt" displayName="@string/config_show_battery" screenReaderText="@string/config_show_battery" icon="i_val" defaultValue="FALSE" />
         <BooleanConfiguration id="smooth_sec" displayName="@string/config_smooth_seconds" screenReaderText="@string/config_smooth_seconds" icon="i_val" defaultValue="FALSE" />
-
-        <Flavors defaultValue="default_valk">
-            <Flavor id="default_valk" displayName="@string/flavor_valk" screenReaderText="@string/flavor_valk">
-                <Configuration id="background_image" optionId="5" />
-            </Flavor>
-            <Flavor id="alter_style" displayName="@string/flavor_alter" screenReaderText="@string/flavor_alter">
-                <Configuration id="background_image" optionId="0" />
-            </Flavor>
-        </Flavors>
     </UserConfigurations>
 
     <Scene backgroundColor="#000000">
 
-        <PartImage x="0" y="0" width="450" height="450" name="base_bg">
-            <Image resource="image_pastel_green" />
-            <Variant mode="AMBIENT" target="alpha" value="0" />
-        </PartImage>
+        <Group x="0" y="0" width="450" height="450" name="background_layer">
+            <PartImage x="0" y="0" width="450" height="450" name="base_bg">
+                <Image resource="image_bg_apex" />
+                <Variant mode="AMBIENT" target="alpha" value="0" />
+            </PartImage>
 
-        <ListConfiguration id="background_image">
-            <ListOption id="0"><PartImage x="0" y="0" width="450" height="450" name="p0"><Image resource="c_alter" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-            <ListOption id="1"><PartImage x="0" y="0" width="450" height="450" name="p1_bg"><Image resource="c_ash" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-            <ListOption id="2"><PartImage x="0" y="0" width="450" height="450" name="p2_bg"><Image resource="c_ballistic_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-            <ListOption id="3"><PartImage x="0" y="0" width="450" height="450" name="p3_bg"><Image resource="c_bangalore_2" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-            <ListOption id="4"><PartImage x="0" y="0" width="450" height="450" name="p4_bg"><Image resource="c_blood_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-            <ListOption id="5"><PartImage x="0" y="0" width="450" height="450" name="p5_bg"><Image resource="c_val" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-            <ListOption id="6"><PartImage x="0" y="0" width="450" height="450" name="p6_bg"><Image resource="c_catalyst_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-            <ListOption id="7"><PartImage x="0" y="0" width="450" height="450" name="p7_bg"><Image resource="c_lifeline_2" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-            <ListOption id="8"><PartImage x="0" y="0" width="450" height="450" name="p8_bg"><Image resource="c_rampart_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-            <ListOption id="9"><PartImage x="0" y="0" width="450" height="450" name="p9_bg"><Image resource="c_wattson_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-
-            <ListOption id="10"><PartImage x="0" y="0" width="450" height="450" name="bg_10"><Image resource="c_caustic_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-            <ListOption id="11"><PartImage x="0" y="0" width="450" height="450" name="bg_11"><Image resource="c_conduit_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-            <ListOption id="12"><PartImage x="0" y="0" width="450" height="450" name="bg_12"><Image resource="c_crypto_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-            <ListOption id="13"><PartImage x="0" y="0" width="450" height="450" name="bg_13"><Image resource="c_fuse_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-            <ListOption id="14"><PartImage x="0" y="0" width="450" height="450" name="bg_14"><Image resource="c_gibraltar_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-            <ListOption id="15"><PartImage x="0" y="0" width="450" height="450" name="bg_15"><Image resource="c_horizon_2" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-
-            <ListOption id="16"><PartImage x="0" y="0" width="450" height="450" name="bg_16"><Image resource="c_loba_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-            <ListOption id="17"><PartImage x="0" y="0" width="450" height="450" name="bg_17"><Image resource="c_mad_maggie_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-            <ListOption id="18"><PartImage x="0" y="0" width="450" height="450" name="bg_18"><Image resource="c_mirage_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-            <ListOption id="19"><PartImage x="0" y="0" width="450" height="450" name="bg_19"><Image resource="c_newcastle_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-            <ListOption id="20"><PartImage x="0" y="0" width="450" height="450" name="bg_20"><Image resource="c_okutan_2" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-            <ListOption id="21"><PartImage x="0" y="0" width="450" height="450" name="bg_21"><Image resource="c_revenant_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-            <ListOption id="22"><PartImage x="0" y="0" width="450" height="450" name="bg_22"><Image resource="c_seer_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-            <ListOption id="23"><PartImage x="0" y="0" width="450" height="450" name="bg_23"><Image resource="c_sparrow_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-            <ListOption id="24"><PartImage x="0" y="0" width="450" height="450" name="bg_24"><Image resource="c_wraith_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-            <ListOption id="25"><PartImage x="0" y="0" width="450" height="450" name="bg_25"><Image resource="c_pass_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-            <ListOption id="26"><PartImage x="0" y="0" width="450" height="450" name="bg_26"><Image resource="c_vantage_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-
-            <ListOption id="27"><PartImage x="0" y="0" width="450" height="450" name="bg_27"><Image resource="c_axle_2" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
-        </ListConfiguration>
+            <ListConfiguration id="background_image">
+                <ListOption id="0"><PartImage x="0" y="0" width="450" height="450" name="p0"><Image resource="c_alter" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+                <ListOption id="1"><PartImage x="0" y="0" width="450" height="450" name="p1_bg"><Image resource="c_ash" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+                <ListOption id="2"><PartImage x="0" y="0" width="450" height="450" name="p2_bg"><Image resource="c_ballistic_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+                <ListOption id="3"><PartImage x="0" y="0" width="450" height="450" name="p3_bg"><Image resource="c_bangalore_2" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+                <ListOption id="4"><PartImage x="0" y="0" width="450" height="450" name="p4_bg"><Image resource="c_blood_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+                <ListOption id="5"><PartImage x="0" y="0" width="450" height="450" name="p5_bg"><Image resource="c_val" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+                <ListOption id="6"><PartImage x="0" y="0" width="450" height="450" name="p6_bg"><Image resource="c_catalyst_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+                <ListOption id="7"><PartImage x="0" y="0" width="450" height="450" name="p7_bg"><Image resource="c_lifeline_2" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+                <ListOption id="8"><PartImage x="0" y="0" width="450" height="450" name="p8_bg"><Image resource="c_rampart_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+                <ListOption id="9"><PartImage x="0" y="0" width="450" height="450" name="p9_bg"><Image resource="c_wattson_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+                <ListOption id="10"><PartImage x="0" y="0" width="450" height="450" name="bg_10"><Image resource="c_caustic_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+                <ListOption id="11"><PartImage x="0" y="0" width="450" height="450" name="bg_11"><Image resource="c_conduit_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+                <ListOption id="12"><PartImage x="0" y="0" width="450" height="450" name="bg_12"><Image resource="c_crypto_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+                <ListOption id="13"><PartImage x="0" y="0" width="450" height="450" name="bg_13"><Image resource="c_fuse_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+                <ListOption id="14"><PartImage x="0" y="0" width="450" height="450" name="bg_14"><Image resource="c_gibraltar_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+                <ListOption id="15"><PartImage x="0" y="0" width="450" height="450" name="bg_15"><Image resource="c_horizon_2" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+                <ListOption id="16"><PartImage x="0" y="0" width="450" height="450" name="bg_16"><Image resource="c_loba_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+                <ListOption id="17"><PartImage x="0" y="0" width="450" height="450" name="bg_17"><Image resource="c_mad_maggie_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+                <ListOption id="18"><PartImage x="0" y="0" width="450" height="450" name="bg_18"><Image resource="c_mirage_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+                <ListOption id="19"><PartImage x="0" y="0" width="450" height="450" name="bg_19"><Image resource="c_newcastle_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+                <ListOption id="20"><PartImage x="0" y="0" width="450" height="450" name="bg_20"><Image resource="c_okutan_2" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+                <ListOption id="21"><PartImage x="0" y="0" width="450" height="450" name="bg_21"><Image resource="c_revenant_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+                <ListOption id="22"><PartImage x="0" y="0" width="450" height="450" name="bg_22"><Image resource="c_seer_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+                <ListOption id="23"><PartImage x="0" y="0" width="450" height="450" name="bg_23"><Image resource="c_sparrow_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+                <ListOption id="24"><PartImage x="0" y="0" width="450" height="450" name="bg_24"><Image resource="c_wraith_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+                <ListOption id="25"><PartImage x="0" y="0" width="450" height="450" name="bg_25"><Image resource="c_pass_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+                <ListOption id="26"><PartImage x="0" y="0" width="450" height="450" name="bg_26"><Image resource="c_vantage_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+                <ListOption id="27"><PartImage x="0" y="0" width="450" height="450" name="bg_27"><Image resource="c_axle_2" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+            </ListConfiguration>
+        </Group>
 
         <Group x="0" y="0" width="450" height="450" name="indices">
             <Group x="0" y="0" width="450" height="450" name="idx12" angle="0"><PartImage x="215" y="10" width="20" height="12" tintColor="#FF004D" name="p12"><Image resource="index_stick_triangle" /><Variant mode="AMBIENT" target="tintColor" value="#555555" /></PartImage></Group>
@@ -127,7 +115,7 @@
 
         <BooleanConfiguration id="show_batt">
             <BooleanOption id="TRUE">
-                <Group name="battery_group" x="0" y="0" width="450" height="450">
+                <Group name="battery_group_on" x="0" y="0" width="450" height="450">
                     <PartDraw name="battery_bg" x="175" y="340" width="100" height="40">
                         <RoundRectangle x="0" y="0" width="100" height="40" cornerRadiusX="20" cornerRadiusY="20">
                             <Fill color="#BB000000" />
@@ -135,7 +123,6 @@
                         </RoundRectangle>
                         <Variant mode="AMBIENT" target="alpha" value="0" />
                     </PartDraw>
-
                     <PartText name="battery_value" x="175" y="340" width="100" height="40">
                         <Text align="CENTER">
                             <Font family="SYNC_TO_DEVICE" size="22" color="#FFFFFF" weight="BOLD">
@@ -146,37 +133,46 @@
                     </PartText>
                 </Group>
             </BooleanOption>
+            <BooleanOption id="FALSE">
+                <Group name="battery_group_off" x="0" y="0" width="1" height="1" />
+            </BooleanOption>
         </BooleanConfiguration>
 
         <BooleanConfiguration id="smooth_sec">
+
             <BooleanOption id="TRUE">
-                <AnalogClock x="0" y="0" width="450" height="450">
-                    <HourHand resource="hour_modern" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.0]">
-                        <Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" />
-                    </HourHand>
-                    <MinuteHand resource="min_modern" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.1]">
-                        <Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" />
-                    </MinuteHand>
-                    <SecondHand resource="sec_modern" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.2]">
-                        <Variant mode="AMBIENT" target="alpha" value="0" />
-                        <Sweep frequency="15" />
-                    </SecondHand>
-                </AnalogClock>
+                <Group name="hands_smooth" x="0" y="0" width="450" height="450">
+                    <AnalogClock x="0" y="0" width="450" height="450">
+                        <HourHand resource="watch_hour_1" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.0]">
+                            <Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" />
+                        </HourHand>
+                        <MinuteHand resource="watch_min_1" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.1]">
+                            <Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" />
+                        </MinuteHand>
+                        <SecondHand resource="watch_sec_1" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.2]">
+                            <Variant mode="AMBIENT" target="alpha" value="0" />
+                            <Sweep frequency="15" />
+                        </SecondHand>
+                    </AnalogClock>
+                </Group>
             </BooleanOption>
 
             <BooleanOption id="FALSE">
-                <AnalogClock x="0" y="0" width="450" height="450">
-                    <HourHand resource="hour_modern" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.0]">
-                        <Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" />
-                    </HourHand>
-                    <MinuteHand resource="min_modern" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.1]">
-                        <Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" />
-                    </MinuteHand>
-                    <SecondHand resource="sec_modern" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.2]">
-                        <Variant mode="AMBIENT" target="alpha" value="0" />
-                    </SecondHand>
-                </AnalogClock>
+                <Group name="hands_tick" x="0" y="0" width="450" height="450">
+                    <AnalogClock x="0" y="0" width="450" height="450">
+                        <HourHand resource="watch_hour_1" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.0]">
+                            <Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" />
+                        </HourHand>
+                        <MinuteHand resource="watch_min_1" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.1]">
+                            <Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" />
+                        </MinuteHand>
+                        <SecondHand resource="watch_sec_1" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.2]">
+                            <Variant mode="AMBIENT" target="alpha" value="0" />
+                        </SecondHand>
+                    </AnalogClock>
+                </Group>
             </BooleanOption>
+
         </BooleanConfiguration>
 
     </Scene>
